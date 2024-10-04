@@ -1,12 +1,9 @@
-# Your Name Here
+# Matt Curl
 # UWYO COSC 1010
-# Submission Date
-# Lab 03 
-# Lab Section: 
-# Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# 10/6/2024
+# Lab 04
+# Lab Section: 13
+# Sources, people worked with, help given to: Braeden Kirby
 
 
 
@@ -99,7 +96,21 @@ min_temps = [
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
 
+#define variables for use later
+max_sum = 0
+min_sum = 0
+#find sum of lists
+for l in range(len(min_temps)):
+    max_sum += max_temps[l]
+    min_sum += min_temps[l]
+#divide by lengths to get average
+max_average = max_sum/len(max_temps)
+min_average = min_sum/len(min_temps)
+#print the found averages
+print(f"{max_average} was the average of the Max Temps")
+print(f"{min_average} was the average of the Min Temps")
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
-
-
+#use nested min and max functions to get the min and max of respective lists
+print(f"{min(min_temps)} was the minimum Temperature")
+print(f"{max(max_temps)} was the maximum Temperature")
